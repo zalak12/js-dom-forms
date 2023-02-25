@@ -1,0 +1,40 @@
+<!Doctype html>
+<html>
+    <head>
+        <script>
+        function validateForm() {
+          let x = document.forms["myForm"]["fname"].value;
+          if (x == "") {
+            alert("Name must be filled out");
+            return false;
+          }
+        }
+        </script>
+        </head>
+        <body>
+        
+        <p>JavaScript Validation</p>
+        <h2>student </h>
+      
+          Name: <input type="text" name="fname"> <br>
+          Age:  <input type="text maxlength"="3" size="3"> <br>
+          Dob :<input type="date"> <br>
+          Course Name :<select>
+            <option> select </option>
+            <option> BCA </option>
+            <option> BBA </option>
+            <option> B.com </option>
+            </select> <br>
+            City:<select>
+              <option> select </option>
+              <option> surat </option>
+              <option> ahemdabad </option>
+              <option> bhavnagar </option>
+            </select> <br>
+
+          Address:<form action="/action_page.php" method="post">
+              <input type="text" name="fname" required> <br>
+              <input type="submit" value="Submit">
+              
+        </form>
+        </html>
