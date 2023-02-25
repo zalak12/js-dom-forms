@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)file:///C:/Users/student/Desktop/css/javascript%203.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>
+
+<h2>JavaScript HTML DOM</h2>
+<p>Finding HTML Elements Using <b>document.forms</b>.</p>
+
+<form id="frm1" action="file:///C:/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br><br>
+  <input type="submit">
+</form> 
+<a href="file:///C:/Users/student/Desktop/css/js%20r%201%20.html">Next</a>
+
+<p id="demo"><br><br><br></p>
+
+<script>
+const x = document.forms["frm1"];
+let text = "";
+for (let i = 0; i < x.length ;i++) {
+  text += x.elements[i].value + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+
+
+</body></html>
